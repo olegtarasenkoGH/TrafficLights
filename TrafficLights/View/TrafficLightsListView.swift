@@ -54,7 +54,7 @@ struct TrafficLightsView: View {
     
             })
             
-            Button(action: {selectColor() }) {
+            Button(action: { selectColor() }) {
                     
                 Text( "\(selectButton)")
                     
