@@ -44,7 +44,7 @@ struct TrafficLightsView: View {
         
         VStack {
     
-            VStack(alignment: .center, spacing: 25, content: {
+            VStack(alignment: .center, spacing: 35, content: {
                 
                 CircleRedView(color: colorRed)
                 CircleYellowView(color: colorYellow)
