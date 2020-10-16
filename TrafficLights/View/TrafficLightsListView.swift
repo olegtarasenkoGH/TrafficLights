@@ -22,7 +22,7 @@ struct TrafficLightsView: View {
         switch selectCircle {
         
                 case .red:
-                    colorRed = #colorLiteral(red: 0.3618964553, green: 0.00535113737, blue: 0, alpha: 1)
+                    colorRed = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.7486332573)
                     colorGreen = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     selectCircle = .yellow
                     
