@@ -55,11 +55,10 @@ struct TrafficLightsView: View {
             })
             
             Button(action: { selectColor() }) {
-                    
+                
                 Text( "\(selectButton)")
                     
-                   .font(.custom( "30", size: 30))
-                    .fontWeight(.regular)
+                    .font(.custom( "30", size: 30))
                     .foregroundColor(.white)
                     .shadow(radius: 3)
                     .padding(.vertical)
