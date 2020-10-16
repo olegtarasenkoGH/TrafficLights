@@ -22,21 +22,19 @@ struct TrafficLightsView: View {
                 case .red:
                     selectButton = "NEXT"
                     colorRed = #colorLiteral(red: 0.3618964553, green: 0.00535113737, blue: 0, alpha: 1)
-                    colorYellow = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     colorGreen = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     selectCircle = .yellow
                     
                 case .yellow:
                     colorRed = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     colorYellow = #colorLiteral(red: 0.9683473706, green: 0.8943588138, blue: 0.2571321726, alpha: 1)
-                    colorGreen = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     selectCircle = .green
                     
                 case .green:
-                    colorRed = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     colorYellow = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     colorGreen = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
                     selectCircle = .red
+                    
         }
         
     }
@@ -59,7 +57,7 @@ struct TrafficLightsView: View {
                     
                 Text( "\(selectButton)")
                     
-                    .font(.custom( "30", size: 30))
+                   .font(.custom( "30", size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .shadow(radius: 3)
