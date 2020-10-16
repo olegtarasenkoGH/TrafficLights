@@ -17,10 +17,11 @@ struct TrafficLightsView: View {
 
     private func selectColor() {
         
+        selectButton = "NEXT"
+        
         switch selectCircle {
         
                 case .red:
-                    selectButton = "NEXT"
                     colorRed = #colorLiteral(red: 0.3618964553, green: 0.00535113737, blue: 0, alpha: 1)
                     colorGreen = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     selectCircle = .yellow
