@@ -45,10 +45,12 @@ struct TrafficLightsView: View {
         VStack {
     
             VStack(alignment: .center, spacing: 35, content: {
+               
                 
-                CircleRedView(color: colorRed)
-                CircleYellowView(color: colorYellow)
-                CircleGreenView(color: colorGreen)
+                CircleView(color: colorRed)
+                    .padding(.top, 30)
+                CircleView(color: colorYellow)
+                CircleView(color: colorGreen)
                 
                     Spacer()
     
@@ -65,9 +67,10 @@ struct TrafficLightsView: View {
                     .frame(width: UIScreen.main.bounds.width - 120)
                     .background(Color.linear)
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                    .shadow(color: Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)).opacity(0.7), radius: 20)
+                    .shadow(color: Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)).opacity(0.7), radius: 10)
             }
         }
+        
         .padding(60)
         .background(Color.radial)
         .edgesIgnoringSafeArea(.all)

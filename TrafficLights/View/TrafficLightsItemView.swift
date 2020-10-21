@@ -13,7 +13,7 @@ enum SelectCircle {
     case green
 }
 
-struct CircleRedView: View {
+struct CircleView: View {
     var color: UIColor
     var body: some View {
         
@@ -23,35 +23,12 @@ struct CircleRedView: View {
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 7))
             .shadow(color: Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)).opacity(1.5), radius: 20)
-            .padding(.top, 30)
+
     }
 }
 
-struct CircleYellowView: View {
-    var color: UIColor
-    var body: some View {
-        
-        Color(color)
-            
-            .frame(width: 140, height: 140, alignment: .center)
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 7))
-            .shadow(color: Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)).opacity(1.5), radius: 20)
-        
+struct TrafficLightsItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleView(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
     }
 }
-
-struct CircleGreenView: View {
-    var color: UIColor
-    var body: some View {
-        
-        Color(color)
-            
-            .frame(width: 140, height: 140, alignment: .center)
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 7))
-            .shadow(color: Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)).opacity(1.5), radius: 20)
-        
-    }
-}
-
